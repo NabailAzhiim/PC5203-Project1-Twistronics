@@ -10,8 +10,9 @@ Outputs:
 -  moire_lattice.txt   -- twisted bilayer lattice patter
 
 How to read "clustering.txt" 
-- -> For each row,
-- [Block name] -- [Block position (a,b)] -- [Point index] -- [Point group (r1 or r2)] -- [Point coordinate]
+- For each row,
+
+[Block name] -- [Block position (a,b)] -- [Point index] -- [Point group (r1 or r2)] -- [Point coordinate]
 
 ## pairing.py -> set up neighbor pairings.
 
@@ -22,11 +23,12 @@ Outputs:
 -  pairing_sorted.txt   -- same pairs, sorted by magnitude d ascending
 
 How to read "pairing.txt" and "pairing_sorted.txt":
-- -> A is the reference point at the reference block (O)
-- -> B is the chosen point at the selected block (S)
-- -> rBA = rB - rA is the displacement vector between A and B
-- -> For each row,
-- [Block S position (a,b)] -- [Point A and B index] -- [Point A and B group] -- [rBA vector] -- [rBA magnitude] -- [rBA angle in deg]
-- -> Positive angles for counter-clockwise rotation, negative angles for clockwise rotation
+- A is the reference point at the reference block (O)
+- B is the chosen point at the selected block (S)
+- rBA = rB - rA is the displacement vector between A and B
+- Positive angles for counter-clockwise rotation, negative angles for clockwise rotation
+- For each row,
+
+[Block S position (a,b)] -- [Point A and B index] -- [Point A and B group] -- [rBA vector] -- [rBA magnitude] -- [rBA angle in deg]
 
 
