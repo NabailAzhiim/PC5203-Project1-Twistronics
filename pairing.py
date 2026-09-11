@@ -19,7 +19,7 @@ How to read "pairing.txt" and "pairing_sorted.txt":
 -> B is the chosen point at the selected block (S)
 -> rBA = rB - rA is the displacement vector between A and B
 -> For each row,
-[Block S position (a,b)] -- [Point A and B index] -- [Point A and B group)] -- [rBA vector] -- [rBA magnitude] -- [rBA angle in deg]
+[Block S position (a,b)] -- [Point A and B index] -- [Point A and B group] -- [rBA vector] -- [rBA magnitude] -- [rBA angle in deg]
 -> Positive angles for counter-clockwise rotation, negative angles for clockwise rotation
 """
 
