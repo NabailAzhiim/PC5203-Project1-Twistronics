@@ -31,4 +31,20 @@ How to read "pairing.txt" and "pairing_sorted.txt":
 
 [Block S position (a,b)] -- [Point A and B index] -- [Point A and B group] -- [rBA vector] -- [rBA magnitude] -- [rBA angle in deg]
 
+## tight_binding.py -> calculate band structure and DOS.
+- Divided into: general and specific (user defined) parts.
+- General part: general tools to calculate band structure and DOS from a pairing output file.
+- Specific part: user defined tight binding parameterization and smearing for DOS calculations, the default method is exponential parameterization with Gaussian smearing.
+- line 34-39: tunable parameter for default methods, including on-site energy and layer distance.
+- Exponential parameterization: t = t0 exp(-R/L), where the atomic distance R includes the vertical displacement (if any).
+- Note that k-path used in the band structure plot is: $\Gamma-X-M-\Gamma$.
+- The DOS is calculated by uniformly sampling k-points in the first Brillouin zone with a given k-mesh grid.
+- Smearing is used to replace dirac Delta function, you might need to tune up smearing parameters for every different calculation.
+-  You can modifiy the k-mesh grid size at line 282.
 
+## What we have done so far
+- Writing (vibe coding) the scripts to perform clustering, pairing, and tight-binding calculations.
+- Identifying lattice structures with <= 100 atoms in a unit cell (m = 2,3,4,5,6,7).
+- Testing exponential tight binding parameterization for m = 2 with a layer distance dl = 0.1.
+- It seems the onsite energy only shift the band structure (but this hasn't really verified).
+- For the zero onsite energy, it can be seen that weak hopping (small decay length L) causes localization, while strong hopping (large decay length L) effectively closes the band gap (metallic state).
