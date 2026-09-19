@@ -1,0 +1,2 @@
+FAILED m=2, eon=0.0, t0=1.0, L=0.0, dl=0.1: Eigenvalues did not converge
+FAILED m=3, eon=0.0, t0=1.0, L=0.0, dl=0.1: Eigenvalues did not converge
