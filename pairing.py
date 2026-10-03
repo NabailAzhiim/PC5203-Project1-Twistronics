@@ -55,7 +55,7 @@ def write_pairing_file(rows, out_path):
 
 
 if __name__ == "__main__":
-    m = 2
+    m = 0
     results = cluster_points(m)
 
     outdir = "m=" + str(m) + "/"
